@@ -3,3 +3,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  /* text-colors */
+  --clr-primary: #6A6A6A;
+  --clr-secondary:#818181;
+  --clr-heading: #000;
+  --clr-white:#fff;
+
+  --clr-accent: #F9A51A;
+
+  /* background-colors */
+  --bg-primary: #F3F3F3;
+
+  /* fonts */
+  --font-primary: "Montserrat", sans-serif;
+}
+
+body{
+  font-family: var(--font-primary);
+  color:var(--clr-primary);
+  font-size: 14px;
+}
+
+
+p{
+  line-height: 1.5rem;
+}
+h1,h2,h3,h4,h5{
+  color:var(--clr-heading);
+}
+h1{
+  font-size: 32px;
+}
+h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+h4{
+  font-size: 18px;
+  font-weight: 500;
+}
+h5{
+  font-size: 16px;
+}
+
+
+@media screen and (min-width: 768px) {
+  body{
+    font-size: 1rem;
+  }
+  h1{
+    font-size: 40px;
+  }
+ }
+
+@media screen and (min-width: 1024px){
+  p{
+    line-height: 1.3rem;
+  }
+  h1{
+    font-size: 60px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 18px;
+  } 
+}
